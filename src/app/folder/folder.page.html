@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    
+  </ion-header>
+  <ion-item>
+    <ion-input type="text" placeholder="Enter You're name"></ion-input>
+</ion-item>
+<ion-button (click)="presentModal()"expand="block">Show Modal</ion-button>
+<div class="ion-padding">
+  <p>Welcome to Ionic icons <a href="https://ionicons.com/assets/img/meta/ionicons-og-image.png" target="blank">Ionicons</a></p>
+  
+    <p>Different Sizes</p>
+    <ion-icon name="add-circle-outline"></ion-icon>
+    <ion-icon name="add-circle-outline" size="large"></ion-icon>
+    <ion-icon name="add-circle-outline" size="small"></ion-icon>
+    <ion-icon name="add-circle-outline" class="custom-icon"></ion-icon>
+    <p>Different Colors for icons</p>
+    <ion-icon name="add-circle-outline" color="primary"></ion-icon>
+    <ion-icon name="add-circle-outline" color="secondary"></ion-icon>
+    <ion-icon name="add-circle-outline" color="tertiary"></ion-icon>
+
+</div>
+<div class="card">
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-card-title>Nishant Hulwan</ion-card-title>
+      <ion-card-subtitle>Full Stack Developer</ion-card-subtitle>
+      <ion-card-content>
+        Hi this is Nishant Masters student at Pace University 
+      </ion-card-content>
+    </ion-card-header>
+    
+  </ion-card>
+</div>
+<div class="ion-padding">
+  <ion-card>
+    <ion-img src="https://api.time.com/wp-content/uploads/2020/03/new-york-city-coronavirus.jpg"></ion-img>
+    
+    <ion-button size="small" float-right (click)="shareSocialNw()">Share</ion-button>
+  </ion-card>
+  
+</div>
+<div class="about-info">
+  <h4 #title class="ion-padding-start">Ionic Animation</h4>
+</div>
+</ion-content>
